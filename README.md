@@ -35,9 +35,11 @@ The repository is organized into the following directories:
 ## How to Use
 
 To explore the code, you can clone this repository to your local machine:
+```bash
+git clone https://github.com/Htet-Khant-Linn/CS_210_Python.git
+```
 
 ## ⚠️ Disclaimer
 The content in this repository is intended for educational and archival purposes only. If you are a student in CS 210, please use this as a reference but do not copy the code. 
 
-```bash
-git clone https://github.com/Htet-Khant-Linn/CS_210_Python.git
+
