@@ -40,4 +40,4 @@ To explore the code, you can clone this repository to your local machine:
 The content in this repository is intended for educational and archival purposes only. If you are a student in CS 210, please use this as a reference but do not copy the code. 
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Htet-Khant-Linn/CS_210_Python.git
