@@ -26,9 +26,9 @@ CS 210 is a foundational course in programming using the Python language. Topics
 The repository is organized into the following directories:
 
 * **/assignments**: Contains weekly or bi-weekly programming assignments.
-* **/labs**: Includes code and solutions from in-class lab sessions.
-* **/projects**: Larger-scale projects, including the final project.
 * **/notes**: Personal notes, code snippets, and summaries of key concepts.
+* **/projects**: Larger-scale projects, including the final project.
+
 
 ---
 
