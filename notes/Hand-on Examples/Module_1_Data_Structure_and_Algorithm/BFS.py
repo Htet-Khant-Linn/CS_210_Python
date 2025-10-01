@@ -1,5 +1,3 @@
-# Breadth-First Search (BFS) 
-
 from collections import deque
 
 graph = {

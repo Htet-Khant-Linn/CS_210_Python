@@ -1,6 +1,3 @@
-# Depth-First Search (DFS)
-
-
 # Using adjacency list representation
 graph = {
     'A': ['B', 'C'],
