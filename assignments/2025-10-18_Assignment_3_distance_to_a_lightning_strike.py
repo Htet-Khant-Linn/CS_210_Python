@@ -31,7 +31,7 @@ def main():
 main()
 
 '''
-Explination:
+Explanation:
 My program calculates the distance to a lighting strike in miles.
 I use the main function that handles user input (the time elapsed (in seconds) between the flash and the sound of thunder)
 and passed the input time value (time_elapsed) into the dist_lighting_strike_in_mile function. 

@@ -34,10 +34,21 @@ def main():
 
     print("\n-----Total order cost-----\n")
 
-    print(f"{pounds_of_coffee} pounds of coffee cost {total_cost:.2f} including the shipping cost.")
+    print(f"{pounds_of_coffee} pounds of coffee cost ${total_cost:.2f} including the shipping cost.")
     # rounding to 2 decimal place using :.2f
     print('\n-----Thanks for your order-----')
 
 
 main()
 
+
+'''
+Explanation:
+My program calculates the total cost for a customer coffee order at the Konditorei coffee shop.
+The main function handle the user input - ask for the amount of coffee in pounds.
+This pound value is passed to two functions - total_coffee_cost() calculate the cost of the coffee beans (at $10.50/lb), 
+and shipping_cost() calculates the variable part of the shipping (at $0.86/lb).
+Then, in the main function, the program calculates the final total by adding the coffee cost, the shipping cost and 
+the $1.50 fixed overhead cost.
+Finally, the program prints the total formatted output to two decimal places using (:.2f). 
+'''

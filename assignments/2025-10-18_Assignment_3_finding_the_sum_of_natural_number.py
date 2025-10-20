@@ -1,4 +1,8 @@
 '''
+Htet Khant Linn
+Assignment 3
+
+
 3. Write a program to find the sum of the first n natural numbers, where the value of n is provided by the user.
 
 Formula: sum = n(n+1)/2
@@ -24,11 +28,11 @@ def main():
         if is_natural_number(user_input_num):
             total_sum = sum_of_natural_numbers(user_input_num)
             
-            print(f"The sum of the first {user_input_num} natural numbers is {total_sum}.")
+            print(f"\nThe sum of the first {user_input_num} natural numbers is {total_sum}.")
 
         else:
             # handle integers that are not natural numbers (0 or negatives)
-            print(f"Your input {user_input_num} is not a natural number (1 or greater). Please try again.")
+            print(f"\nYour input {user_input_num} is not a natural number (1 or greater). Please try again.")
     
     except ValueError:
         # to hanlde non-integer value
@@ -36,3 +40,18 @@ def main():
 
 
 main()
+
+
+'''
+Explanation:
+In the code, the main function is responsible to get the user input. 
+Even thought try-except is not in our lecture yet, I found that in hand-on examples,
+and decided to try using it. 
+The try-except block here ensure the input is a valid integer and not a string or decimal. 
+Then, the funciton natural_number() is called to verify that the integer is 1 or greater. 
+If the input is a valid natural number, it is passed to the sum_of_natural_numbers() function,
+which calculates the sum using the given formula. 
+Finally, the main function prints the calcualted sum. 
+If the input was invalid (that is either not an integer or not a natural number),
+the program will prints out error message to show what type of errors.
+'''
