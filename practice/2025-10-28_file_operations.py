@@ -16,8 +16,8 @@ def copy_file_content(input_filename, output_filename):
 
         # outputfile.close()
 
-        print(("The content form input file [{}] has been successfully copied to\
-            the output file [{}].").format(input_filename, output_filename))
+        print(("The content form input file [{}] has been successfully copied to \
+the output file [{}].").format(input_filename, output_filename))
         
     except FileNotFoundError:
         print(("Error: The input file '{}' was not found.").format(input_filename))
