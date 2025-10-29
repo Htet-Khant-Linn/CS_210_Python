@@ -8,10 +8,10 @@ def main():
     print("This program will convert a textual message \
 into a sequence of numbers that represents.\n")
     
-    inputtxt = input("Please enter the message to encode: ")
+    input_txt = input("Please enter the message to encode: ")
 
     print("\nHere is the Unicode code: ")
-    for ch in inputtxt:
+    for ch in input_txt:
         print(ord(ch), end = " ")
 
     # print a blank line before the prompt
