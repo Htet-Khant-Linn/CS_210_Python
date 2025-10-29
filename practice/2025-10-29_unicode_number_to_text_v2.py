@@ -32,7 +32,7 @@ the string of text that it represents.\n")
             continue
 
     message = "".join(chars)
-    print(f"\n The decoded message is:", message)
+    print(f"\n The decoded message is: {message}")
 
 
 main()
