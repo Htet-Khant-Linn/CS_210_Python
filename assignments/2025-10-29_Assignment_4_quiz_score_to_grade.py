@@ -22,7 +22,7 @@ grades = {5 : "A",
 
 
 def main():
-    print("This program give the grade of the input score.\n")
+    print("This program give the grade of the input score.")
     print("Developed by Htet Khant Linn.")
     print("------------------------------")
     # accept the user input
