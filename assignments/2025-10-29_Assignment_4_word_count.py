@@ -11,7 +11,7 @@ Hints:
 
 def word_counter(sentence):
 
-    # this will store the split word in list
+    # this will store the split word into list
     words = sentence.split()
     word_count = len(words)
     return word_count
