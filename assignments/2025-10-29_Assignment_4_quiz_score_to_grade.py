@@ -45,7 +45,7 @@ def main():
         else:
             print("Error: The input socre must be between 0 and 5.")
 
-    # except handle invalid input like string
+    # except handle invalid input like string and float
     except ValueError:
         print(f"Error: The input '{input_text}' is not a valid integer. Please try again.\n")
 
