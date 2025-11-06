@@ -23,6 +23,10 @@ def remainder(num_1, num_2):
     return num_1 % num_2
 
 def main():
+    print("This program give the sum, difference, product, quotient, and remainder of two whole numbers.")
+    print("Developed by Htet Khant Linn.")
+    print("------------------------------\n")
+
     try:
         num_1_str, num_2_str = input("Please enter two numbers seperated by comma (e.g; 10, 14): ").split(",")
 
