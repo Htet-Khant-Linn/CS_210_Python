@@ -14,22 +14,25 @@ def main():
     print("Developed by Htet Khant Linn.")
     print("------------------------------\n")
 
-    width_str, height_str = input("Please input the width and height of the rectangle seperated by comma (e.g; 10, 14): ").split(",")
     try:
+        # accept the user's width and height inputs
+        width_str, height_str = input("Please input the width and height of the rectangle seperated by comma (e.g; 10, 14): ").split(",")
+        # change the input values to float
         width = float(width_str)
         height = float(height_str)
-        if width and height < 0:
-            if width < 0:
-                print("Your width [{width_str}] can't be a negative value.")
-            elif height < 0:
-                print("Your height [{height_str}] can't be a negative value.")
-            else:
-                print("Your width [{width_str}] & height [{height_str} can't be a negative value.]")
-        reac_area = cal_rec_area(width, height)
 
-        print(f"The area of the rectagle with width [{width}] & height [{height}] is {reac_area}.")
+        # use if-else to check if width or height is negative
+        if width < 0 or height < 0:
+            print(f"Input Error: Dimension values cannot be negative. You entered width: {width_str} & height: {height_str}.")
+        
+        else:
+            # calculate if the numbers are valid (zero or positive values)
+            rec_area = cal_rec_area(width, height)
+            print(f"The area of the rectangle with width [{width}] & height [{height}] is {rec_area}.")
 
     except ValueError:
-        print("Invalid Input: Your input width:{width_str} & height:{height_str} is not a valid numeric input.")
+        # Handles input errors such as not two number inputs or not two numerics
+        print(f"Invalid Input: Please enter two numeric values separated by a comma.")
+        print()
 
 main()
