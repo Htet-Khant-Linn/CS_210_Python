@@ -16,7 +16,7 @@ def main():
 
     try:
         # accept the user's width and height inputs
-        width_str, height_str = input("Please input the width and height of the rectangle seperated by comma (e.g; 10, 14): ").split(",")
+        width_str, height_str = input("Please enter the width and height of the rectangle seperated by comma (e.g; 10, 14): ").split(",")
         # change the input values to float
         width = float(width_str)
         height = float(height_str)
