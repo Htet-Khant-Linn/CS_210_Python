@@ -9,14 +9,18 @@ print("This is the list manipulation exercise.")
 print("Created by Htet Khant Linn.")
 print("------------------------------\n")
 
+# create the list
 my_list = [10, 20, 30, 40, 50]
 print(f"Initial list: {my_list}")
 
+# append 60 to the list
 my_list.append(60)
 print("Appending 60 to the list...")
 
+# remove 30 from the list
 my_list.remove(30)
 print("Removing 30 from the list...")
 
+# printing the final output
 print(f"Final output: {my_list}")
 
