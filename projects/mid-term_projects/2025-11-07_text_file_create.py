@@ -3,6 +3,7 @@ This py file create the text file name called "greeting.txt".
 '''
 
 try:
+    # Create and write to a new file using 'x' mode
     with open("projects\mid-term_projects\greeting.txt", "x") as infile:
         infile.write("Hello Everyone.\n")
         infile.write("My name is Htet Khant Linn.\n")
@@ -11,4 +12,5 @@ try:
         infile.write("Nice to meet you all.")
 
 except FileExistsError:
+    # Handle the error if the file is already in the directory.
     print("Error: 'greeting.txt' already exists.")  
