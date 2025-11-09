@@ -28,7 +28,7 @@ def main():
         else:
             # calculate if the numbers are valid (zero or positive values)
             rec_area = cal_rec_area(width, height)
-            print(f"The area of the rectangle with width [{width}] & height [{height}] is {rec_area}.")
+            print(f"The area of the rectangle with width [{width}] & height [{height}] is {round(rec_area, 2)}.")
 
     except ValueError:
         # Handles input errors such as not two number inputs or not two numerics
