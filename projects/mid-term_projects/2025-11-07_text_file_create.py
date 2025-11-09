@@ -13,4 +13,4 @@ try:
 
 except FileExistsError:
     # Handle the error if the file is already in the directory.
-    print("Error: 'greeting.txt' already exists.")  
+    print("Error: 'greeting.txt' already exists.")
