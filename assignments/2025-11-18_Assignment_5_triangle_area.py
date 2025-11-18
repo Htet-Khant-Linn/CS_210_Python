@@ -20,3 +20,4 @@ print("------------------------------\n")
 
 print(f"Base: {b}, Height: {h}")
 print(f"Area: {triangle_area(b, h)}")
+print()
