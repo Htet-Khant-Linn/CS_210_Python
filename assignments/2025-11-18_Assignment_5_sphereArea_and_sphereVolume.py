@@ -25,6 +25,9 @@ def sphereVolume(radius):
 # testing
 r = 5
 
+print("This code gives the surface area and volume of a sphere having the given radius.")
+print("Developed by Htet Khant Linn.")
+print("------------------------------\n")
 # printing the test result
 print(f"Radius: {r}")
 print(f"Surface Area: {sphereArea(r):.2f}")
