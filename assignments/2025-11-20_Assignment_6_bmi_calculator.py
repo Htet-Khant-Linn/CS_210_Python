@@ -14,17 +14,62 @@ Hints:
         ◦ Greater than 25 → Above healthy range
 '''
 
+# create the bmi_calculator function
 def bmi_calculator(weight, height):
-    bmi = (weight * 720) / height**2
-    if bmi > 0:
-        if bmi < 19:
-            print("Below healthy range.")
-        elif bmi >= 19 and bmi <= 25:
-            print("Within healthy range.")
+
+    # use try-except to catch the ZeroDivisionError
+    try:
+        # apply the given formula to calculate the bmi
+        bmi = (weight * 720) / height**2
+
+        # check if whether the bmi is greater than 0
+        if bmi > 0:
+            # create decision structure for BMI value
+            if bmi < 19:
+                print("Below healthy range.")
+            elif bmi >= 19 and bmi <= 25:
+                print("Within healthy range.")
+            else:
+                print("Above healthy range.")
+        # print error message for nonsensical BMI value
+        elif bmi == 0:
+            print("Input Error: BMI value can't be equal to zero.")
+            print(f"Your input: weight -> {weight}, height -> {height}.")
+
+        # print error message for negative BMI value
         else:
-            print("Above healthy range.")
-    else:
-        print("BMI value can't be negative.")
+            print("Input Error: BMI value can't be negative.")
+            print(f"Your input: weight -> {weight}, height -> {height}.")
+
+    # print error message for ZeroDivisionError
+    except ZeroDivisionError:
+        print("Zero division error: Height value can't be equal to zero.")
+        print(f"Your input: weight -> {weight}, height -> {height}.")
     
 def main():
-    user_input_wt, user_input_ht = input("Please enter your weight and height (in pounds) seperated by comma: ") 
+
+    print()
+    print("This program calculate body mass index (BMI) based on user input weight (lbs) and height (in).")
+    print("Developed by Htet Khant Linn.")
+    print("------------------------------\n")
+
+    # use try-except to catch the user-input ValueError
+    try:
+        # accept the user input
+        user_input = input("Please enter your weight (in pounds) and height (in inches) separated by comma: ")
+        # split by comma
+        user_input_wt, user_input_ht = user_input.split(",")
+        # convert to float value
+        wt = float(user_input_wt)
+        ht = float(user_input_ht)
+
+        # apply the function
+        bmi_calculator(wt, ht)
+
+    # print the ValueError
+    except ValueError:
+        print("Input Error: Please enter valid weight (in pounds) and height (in inches) separated by a comma.")
+        print(f"Your input: {user_input}")
+
+if __name__ == "__main__":
+    main()
