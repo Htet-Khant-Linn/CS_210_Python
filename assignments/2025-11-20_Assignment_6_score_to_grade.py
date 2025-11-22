@@ -9,9 +9,11 @@ Hints:
 
 '''
 
-
+# create grade checking function
 def grade_calculator(score):
+    # check whether the socre range is between 0 and 100
     if 0 <= score <= 100:
+        # proceed the decision structure using if-elif-else
         if score >= 90:
             print("Your Grade is: A. Congratulation!")
         elif score >= 80:
@@ -32,12 +34,17 @@ def main():
     print("Developed by Htet Khant Linn.")
     print("------------------------------\n")
 
+    # use try-except to catch invalid input
     try:
+        # accept the user input
         user_input_score = input("Please insert the score (0-100): ")
+        # chenge the float data type
         score = float(user_input_score)
 
+        # apply the function
         grade_calculator(score)
     
+    # except value will catch the invalid input
     except ValueError:
         print("Input Error: Please inset the score between 0 and 100.")
         print(f"Your Input is '{user_input_score}'.")
