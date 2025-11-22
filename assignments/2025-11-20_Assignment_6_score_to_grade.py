@@ -13,15 +13,15 @@ Hints:
 def grade_calculator(score):
     if 0 <= score <= 100:
         if score >= 90:
-            return print("Your Grade is: A. Congratulation!")
+            print("Your Grade is: A. Congratulation!")
         elif score >= 80:
-            return print("Your Grade is: B. Keep it up!")
+            print("Your Grade is: B. Keep it up!")
         elif score >= 70:
-            return print("Your Grade is: C. Need more work!")
+            print("Your Grade is: C. Need more work!")
         elif score >= 60:
-            return print("Your Grade is: D. Meet with your mentor!")
+            print("Your Grade is: D. Meet with your mentor!")
         else:
-            return print("Your Grade is: F. Meet with the Dean ASAP!")
+            print("Your Grade is: F. Meet with the Dean ASAP!")
     else:
         print("Please insert the valid score between 0 and 100.")
 
